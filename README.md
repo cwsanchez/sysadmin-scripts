@@ -1,6 +1,6 @@
 # System Administration Scripts
 
-A centralized collection of useful scripts and tools for system administration, automation, and operational tasks. 
+A centralized collection of useful scripts and tools for system administration, automation, and operational tasks.
 
 While this repository is designed as a catch-all for various administrative tools, the current focus is primarily on **PowerShell scripts for Windows environments** including Active Directory, Hyper-V, and Network configuration.
 
@@ -26,3 +26,22 @@ Clone the repository to your management workstation or script server:
 
 ```powershell
 git clone [https://github.com/yourusername/sysadmin-scripts.git](https://github.com/yourusername/sysadmin-scripts.git)
+```
+
+### Usage
+Scripts are self-documented. You can view the help and examples for any script using `Get-Help`:
+
+```powershell
+# View detailed help and examples
+Get-Help .\Check-ClusterCapacity.ps1 -Full
+```
+## 🤝 Contributing
+
+Contributions are welcome! If you have a script to add or a fix for an existing one, please check out the [CONTRIBUTING.md](./CONTRIBUTING.md) guide for commit message standards and pull request details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
+**Disclaimer:** These scripts are provided "as is". Always review and test scripts in a non-production environment before deploying them to production systems.
