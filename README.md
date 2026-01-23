@@ -25,7 +25,7 @@ Below are the primary utilities currently maintained in this repository.
 Clone the repository to your management workstation or script server:
 
 ```powershell
-git clone [https://github.com/yourusername/sysadmin-scripts.git](https://github.com/yourusername/sysadmin-scripts.git)
+git clone https://github.com/cwsanchez/sysadmin-scripts.git
 ```
 
 ### Usage
