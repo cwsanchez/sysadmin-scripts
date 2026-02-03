@@ -13,6 +13,7 @@ Below are the primary utilities currently maintained in this repository.
 | **[Check-ClusterCapacity.ps1](./Check-ClusterCapacity.ps1)** | Hyper-V | Analyzes a Failover Cluster to verify if a single node can handle the total VM workload (N+1 capacity check). |
 | **[Set-DNSUpdateCredential.ps1](./Set-DNSUpdateCredential.ps1)** | DHCP/AD | Automates the creation of a secure service account ("DNSUpdate") for DHCP servers to perform dynamic DNS updates. |
 | **[Set-TcpipNetbiosOption.ps1](./Set-TcpipNetbiosOption.ps1)** | Network | Bulk modifies NetBIOS over TCP/IP settings (Enable, Disable, or DHCP Default) for network adapters using WMI. |
+| **[Sync-GroupToAttribute.ps1](./Sync-GroupToAttribute.ps1)** | Active Directory | Enforces a specific user attribute based on group membership (adds the attribute to new members, removes it from former members). |
 
 ## 🚀 Getting Started
 
