@@ -1,3 +1,35 @@
+<#
+.SYNOPSIS
+    Synchronizes an Active Directory user attribute with group membership.
+
+.DESCRIPTION
+    This script functions as a state-enforcement tool for Active Directory attributes based on group membership. 
+    It performs two primary actions:
+    1. Enforce Presence: Checks all members of the target group. If they do not have the specified attribute value, it is added.
+    2. Enforce Absence: Checks all users in the domain who currently have the specified attribute. If they are no longer members of the target group, the attribute is cleared.
+    
+    This is commonly used for:
+    - Azure AD Connect filtering (setting extensionAttributes to hide users from cloud sync).
+    - Application scoping where access relies on specific user attributes rather than groups.
+    - Dynamic address lists based on attributes.
+
+    Configuration:
+    Variables for GroupName, AttributeName, AttributeValue, and LogPath are defined in the 
+    "CONFIGURATION" section of the script header.
+
+.NOTES
+    File Name  : Set-AttributeByGroup.ps1
+    Requires   : ActiveDirectory PowerShell Module
+    Privileges : Requires Account Operator or higher permissions (Write Property access on user objects).
+    Log File   : Generates a transcript of changes at the defined $LogPath.
+
+.EXAMPLE
+    .\Set-AttributeByGroup.ps1
+    
+    Runs the synchronization based on the hardcoded configuration variables in the script. 
+    Review the log file for details on which users were updated.
+#>
+
 # --- CONFIGURATION ---
 $GroupName = "GroupName"
 $AttributeName = "extensionAttribute13" 
