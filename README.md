@@ -14,7 +14,7 @@ Below are the primary utilities currently maintained in this repository.
 | **[Set-DNSUpdateCredential.ps1](./Set-DNSUpdateCredential.ps1)** | DHCP/AD | Automates the creation of a secure service account ("DNSUpdate") for DHCP servers to perform dynamic DNS updates. |
 | **[Set-TcpipNetbiosOption.ps1](./Set-TcpipNetbiosOption.ps1)** | Network | Bulk modifies NetBIOS over TCP/IP settings (Enable, Disable, or DHCP Default) for network adapters using WMI. |
 | **[Set-AttributeByGroup.ps1](./Set-AttributeByGroup.ps1)** | Active Directory | Enforces a specific user attribute based on group membership (adds the attribute to new members, removes it from former members). |
-| **[OutlookSafeSenders](./OutlookSafeSenders)** | Intune / Outlook | Enforces required entries in Outlook’s Safe Senders list file. Perfect for bypassing "Don't download pictures from external senders" for trusted addresses. **See [OutlookSafeSenders/README.md](./OutlookSafeSenders/README.md)** for full Intune deployment guide. |
+| **[OutlookSafeSenders](./OutlookSafeSenders)** | Intune / Outlook | Enforces required entries in Outlook’s Safe Senders list file. Perfect for bypassing "Don't download pictures from external senders" for trusted addresses. |
 
 ## 🚀 Getting Started
 
